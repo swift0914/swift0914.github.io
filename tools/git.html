@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Git 操作 | Swift</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="网站描述">
+    
+    <link rel="preload" href="/assets/css/0.styles.a50faed8.css" as="style"><link rel="preload" href="/assets/js/app.9f162851.js" as="script"><link rel="preload" href="/assets/js/2.2d236276.js" as="script"><link rel="preload" href="/assets/js/23.4ec44ca8.js" as="script"><link rel="prefetch" href="/assets/js/10.2ec0b877.js"><link rel="prefetch" href="/assets/js/11.a6ef9e65.js"><link rel="prefetch" href="/assets/js/12.56e29e24.js"><link rel="prefetch" href="/assets/js/13.abded7ff.js"><link rel="prefetch" href="/assets/js/14.7a9120fb.js"><link rel="prefetch" href="/assets/js/15.9852a1d5.js"><link rel="prefetch" href="/assets/js/16.5b4f9467.js"><link rel="prefetch" href="/assets/js/17.6eebe762.js"><link rel="prefetch" href="/assets/js/18.3b16e359.js"><link rel="prefetch" href="/assets/js/19.cf7f9f4e.js"><link rel="prefetch" href="/assets/js/20.16641585.js"><link rel="prefetch" href="/assets/js/21.46d04754.js"><link rel="prefetch" href="/assets/js/22.15f9b113.js"><link rel="prefetch" href="/assets/js/24.814e67bd.js"><link rel="prefetch" href="/assets/js/25.890c4bb4.js"><link rel="prefetch" href="/assets/js/26.13c34041.js"><link rel="prefetch" href="/assets/js/3.fd151ed4.js"><link rel="prefetch" href="/assets/js/4.e57c7dfe.js"><link rel="prefetch" href="/assets/js/5.42d5a214.js"><link rel="prefetch" href="/assets/js/6.901410d2.js"><link rel="prefetch" href="/assets/js/7.6ec37da4.js"><link rel="prefetch" href="/assets/js/8.631b08fc.js"><link rel="prefetch" href="/assets/js/9.be9ec3c9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a50faed8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Swift</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  home
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  Css
+</a></div><div class="nav-item"><a href="/js/" class="nav-link">
+  Js
+</a></div><div class="nav-item"><a href="/ts/" class="nav-link">
+  TypeScript
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/git.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  git备忘录
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  home
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  Css
+</a></div><div class="nav-item"><a href="/js/" class="nav-link">
+  Js
+</a></div><div class="nav-item"><a href="/ts/" class="nav-link">
+  TypeScript
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/git.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  git备忘录
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>工具</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tools/git.html" aria-current="page" class="active sidebar-link">Git 操作</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tools/git.html#配置操作" class="sidebar-link">配置操作</a></li><li class="sidebar-sub-header"><a href="/tools/git.html#本地操作" class="sidebar-link">本地操作</a></li><li class="sidebar-sub-header"><a href="/tools/git.html#分支操作" class="sidebar-link">分支操作</a></li><li class="sidebar-sub-header"><a href="/tools/git.html#变更历史" class="sidebar-link">变更历史</a></li><li class="sidebar-sub-header"><a href="/tools/git.html#远端交互" class="sidebar-link">远端交互</a></li><li class="sidebar-sub-header"><a href="/tools/git.html#git规范" class="sidebar-link">Git规范</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="git-操作"><a href="#git-操作" class="header-anchor">#</a> Git 操作</h1> <h2 id="配置操作"><a href="#配置操作" class="header-anchor">#</a> 配置操作</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>// 全局配置
+<span class="token function">git</span> config --global user.name <span class="token string">'名字'</span>
+<span class="token function">git</span> config --global user.email <span class="token string">'邮箱'</span>
+
+// 当前仓库配置
+<span class="token function">git</span> config --local user.name <span class="token string">'名字'</span>
+<span class="token function">git</span> config --local user.email <span class="token string">'邮箱'</span>
+
+// 查看全局配置
+<span class="token function">git</span> config --global --list
+
+// 查看当前仓库配置
+<span class="token function">git</span> config --local --list
+
+// 删除全局配置
+<span class="token function">git</span> config --uset --global 要删除的配置项
+
+// 删除本地配置
+<span class="token function">git</span> config --uset --local 要删除的配置项
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h2 id="本地操作"><a href="#本地操作" class="header-anchor">#</a> 本地操作</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>// 查看变更情况
+<span class="token function">git</span> status
+
+// 将当前目录及子目录变更添加到暂存区
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+
+// 仓库内所有变动添加到暂存区
+<span class="token function">git</span> <span class="token function">add</span> -A
+
+// 指定文件添加到暂存区
+<span class="token function">git</span> <span class="token function">add</span> 文件A 文件B
+
+// 比较工作区、暂存区的差异
+<span class="token function">git</span> <span class="token function">diff</span>
+
+// 比较暂存区和 HEAD 的所有差异
+<span class="token function">git</span> <span class="token function">diff</span> --cached
+
+// 比较某文件暂存区和 HEAD 的差异
+<span class="token function">git</span> <span class="token function">diff</span> --cached 文件
+
+// 创建 commit
+<span class="token function">git</span> commit
+
+// 将工作区指定文件恢复成和暂存区一致
+<span class="token function">git</span> checkout 文件1 文件2 文件3
+
+// 将暂存区指定文件恢复成和 HEAD 一致
+<span class="token function">git</span> reset 文件1 文件2 文件3
+
+// 将暂存区和工作区所有文件恢复成和 HEAD 一样
+<span class="token function">git</span> reset --hard
+
+// 优雅修改最后一次 commit
+<span class="token function">git</span> add.
+<span class="token function">git</span> commit --amend
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><h2 id="分支操作"><a href="#分支操作" class="header-anchor">#</a> 分支操作</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>// 查看当前工作分支及本地分支
+<span class="token function">git</span> branch -v
+
+// 查看本地和远端分支
+<span class="token function">git</span> branch -av
+
+// 查看远端分支
+<span class="token function">git</span> branch -rv
+
+// 切换到指定分支
+<span class="token function">git</span> checkout 指定分支
+
+// 基于当前分支创建新分支
+<span class="token function">git</span> branch 新分支名
+
+// 基于指定分支创建新分支
+<span class="token function">git</span> branch 新分支 指定分支
+
+// 基于某个 commit 创建分支
+<span class="token function">git</span> branch 新分支 某个commit的id
+
+// 创建并切换到该分支
+<span class="token function">git</span> checkout -b 新分支
+
+// 安全删除本地某分支
+<span class="token function">git</span> branch -d 要删除的分支
+
+// 强行删除本地某分支
+<span class="token function">git</span> branch -D 要删除的分支
+
+// 删除远端 origin 已不存在的所有本地分支
+<span class="token function">git</span> remote prune orign
+
+// 将 A 分支合入到当前分支中且为 merge 创建 commit
+<span class="token function">git</span> merge A分支
+
+// 将 A 分支合入到 B 分支中且为 merge 创建 commit
+<span class="token function">git</span> merge A分支 B分支
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br></div></div><h2 id="变更历史"><a href="#变更历史" class="header-anchor">#</a> 变更历史</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>// 当前分支各个 commit 用一行显示
+<span class="token function">git</span> log --oneline
+
+// 显示就近的 n 个 commit
+<span class="token function">git</span> log -n
+
+// 用图示显示所有分支的历史
+<span class="token function">git</span> log --oneline --graph --all
+
+// 查看涉及到某文件变更的所有 commit
+<span class="token function">git</span> log 文件
+
+// 某文件各行最后修改对应的 commit 以及作者
+<span class="token function">git</span> blame 文件
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="远端交互"><a href="#远端交互" class="header-anchor">#</a> 远端交互</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>// 查看所有远端仓库
+<span class="token function">git</span> remote -v
+
+// 添加远端仓库
+<span class="token function">git</span> remote <span class="token function">add</span> url
+
+// 删除远端仓库
+<span class="token function">git</span> remote remove remote的名称
+
+// 重命名远端仓库
+<span class="token function">git</span> remote <span class="token function">rename</span> 旧名称 新名称
+
+// 将远端所有分支和标签的变更都拉到本地
+<span class="token function">git</span> fetch remote
+
+// 把远端分支的变更拉到本地，且 merge 到本地分支
+<span class="token function">git</span> pull origin 分支名
+
+// 将本地分支 push 到远端
+<span class="token function">git</span> push origin 分支名
+
+// 删除远端分支
+<span class="token function">git</span> push remote --delete 远端分支名
+<span class="token function">git</span> push remote :远端分支名
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h2 id="git规范"><a href="#git规范" class="header-anchor">#</a> Git规范</h2> <ul><li><code>feat</code> 增加新功能</li> <li><code>fix</code> 修复问题/BUG</li> <li><code>style</code> 代码风格相关无影响运行结果的</li> <li><code>perf</code> 优化/性能提升</li> <li><code>refactor</code> 重构</li> <li><code>revert</code> 撤销修改</li> <li><code>test</code> 测试相关</li> <li><code>docs</code> 文档/注释</li> <li><code>chore</code> 依赖更新/脚手架配置修改等</li> <li><code>workflow</code> 工作流改进</li> <li><code>ci</code> 持续集成</li> <li><code>types</code> 类型定义文件更改</li> <li><code>wip</code> 开发中</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.9f162851.js" defer></script><script src="/assets/js/2.2d236276.js" defer></script><script src="/assets/js/23.4ec44ca8.js" defer></script>
+  </body>
+</html>
